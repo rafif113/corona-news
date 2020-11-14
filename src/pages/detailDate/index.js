@@ -17,13 +17,6 @@ const NewsItem = ({ news }) => {
       </div>
       {activity.map((data) => {
         return (
-          // <div key={data.url}>
-          //   <a href={data.url} target="blank">
-          //     <h5>{data.title}</h5>
-          //   </a>
-          //   <p>{data.desc}</p>
-          // </div>
-
           <div class="card" key={data.url}>
             <div class="card-body">
               <a href={data.url} class="card-link" target="blank">

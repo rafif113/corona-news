@@ -8,7 +8,7 @@ const CoronaNews = () => {
   const [news, setNews] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const [newsPerPage, setNewsPerPage] = useState(3);
+  const [newsPerPage] = useState(3);
 
   useEffect(() => {
     const db = app.database().ref('news');
