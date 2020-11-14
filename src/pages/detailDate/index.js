@@ -11,18 +11,18 @@ const formatDate = (string) => {
 const NewsItem = ({ news }) => {
   const { date, activity } = news[0];
   return (
-    <div class="card text-center">
-      <div class="card-header">
-        <h5 class="card-title">{formatDate(date)}</h5>
+    <div className="card text-center">
+      <div className="card-header">
+        <h5 className="card-title">{formatDate(date)}</h5>
       </div>
       {activity.map((data) => {
         return (
-          <div class="card" key={data.url}>
-            <div class="card-body">
-              <a href={data.url} class="card-link" target="blank">
-                <h5 class="card-title">{data.title}</h5>
+          <div className="card" key={data.url}>
+            <div className="card-body">
+              <a href={data.url} className="card-link" target="blank">
+                <h5 className="card-title">{data.title}</h5>
               </a>
-              <p class="card-text">{data.desc}</p>
+              <p className="card-text">{data.desc}</p>
             </div>
           </div>
         );

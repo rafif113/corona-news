@@ -39,19 +39,19 @@ const CoronaNews = () => {
       {currentNews.map((note) => {
         return (
           <>
-            <div class="card text-center" key={note.id}>
-              <div class="card-header">
+            <div className="card text-center" key={note.id}>
+              <div className="card-header">
                 <Link to={`/infoCorona/${note.date}`}>
-                  <h5 class="card-title">{formatDate(note.date)}</h5>
+                  <h5 className="card-title">{formatDate(note.date)}</h5>
                 </Link>
               </div>
               {note.activity.map((data) => {
                 return (
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">{data.title}</h5>
-                      <p class="card-text">{data.desc}</p>
-                      <a href={data.url} class="card-link">
+                  <div className="card">
+                    <div className="card-body">
+                      <h5 className="card-title">{data.title}</h5>
+                      <p className="card-text">{data.desc}</p>
+                      <a href={data.url} className="card-link">
                         link
                       </a>
                     </div>
