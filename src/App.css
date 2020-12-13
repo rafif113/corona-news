@@ -16,3 +16,17 @@
   background-color: white;
   color: green;
 }
+
+.center_view {
+  width: 80%;
+}
+
+.loginPage {
+  width: 100%;
+}
+.login_form {
+}
+.login_form label input {
+  display: block;
+  margin-bottom: 10px;
+}
